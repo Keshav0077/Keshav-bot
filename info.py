@@ -31,9 +31,9 @@ CODE = (environ.get('CODE', 'https://graph.org/file/e419f801841c2ee3db0fc.jpg'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6285713858 7045947967').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002370123896').split()] #Channel id for auto indexing ( make sure bot is admin )
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002440315747').split()] #Channel id for auto indexing ( make sure bot is admin )
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002461306484')) #Log channel id ( make sure bot is admin )
-DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1002466558685')) #Notification of those who verify will be sent to your channel. Enter the ID of the channel you want to send notification to here.
+DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1002031329869')) #Notification of those who verify will be sent to your channel. Enter the ID of the channel you want to send notification to here.
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002469938780')) # add premium logs channel id
 auth_channel = environ.get('AUTH_CHANNEL', '-1002031329869') #Channel / Group Id for force sub ( make sure bot is admin )
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002474691060').split()]
@@ -48,7 +48,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "cluster")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Deendayal_files')
 
 # index movie Notification & update channel 
-DEENDAYAL_MOVIE_UPDATE_NOTIFICATION = bool(environ.get('DEENDAYAL_MOVIE_UPDATE_NOTIFICATION', True))  # NOTIFICATION On ( True ) / Off ( False )
+DEENDAYAL_MOVIE_UPDATE_NOTIFICATION = bool(environ.get('DEENDAYAL_MOVIE_UPDATE_NOTIFICATION', False))  # NOTIFICATION On ( True ) / Off ( False )
 DEENDAYAL_IMAGE_FETCH = bool(environ.get('DEENDAYAL_IMAGE_FETCH', True))  #  On ( True ) / Off ( False )
 CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla", "Telugu", "Malayalam", "Kannada", "Marathi", "Punjabi", "Bengoli", "Gujrati", "Korean", "Gujarati", "Spanish", "French", "German", "Chinese", "Arabic", "Portuguese", "Russian", "Japanese", "Odia", "Assamese", "Urdu"]
 
