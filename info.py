@@ -38,7 +38,7 @@ PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002469938780')) # add premium 
 auth_channel = environ.get('AUTH_CHANNEL', '-1002031329869') #Channel / Group Id for force sub ( make sure bot is admin )
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002474691060').split()]
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002491588102') # support group id ( make sure bot is admin )
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002031329869'-1002393184501)) # request channel id ( make sure bot is admin ).
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002393184501'-1002428058754'-1002031329869') # request channel id ( make sure bot is admin ).
 
 
 # MongoDB information
